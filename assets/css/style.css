@@ -1,0 +1,179 @@
+/*
+Developer Name: Muhammad Hamza
+Author: Hamza
+Email: Muhammadhamza.webdev@gmail.com
+File: style.css
+*/
+/* ------------------------------
+   Font integration
+------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ------------------------------
+   CSS Reset
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ------------------------------
+   Global elements
+------------------------------ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+}
+
+/* ------------------------------
+   CSS Variables / Root Colors
+------------------------------ */
+:root {
+  --primary-dark-green: #153330;
+  --primary-skin: #d8b38f;
+  --secondary-black-gray: #1d1f20;
+  --white: #ffffff;
+  --off-white: #fcf9f6;
+  --black: #000000;
+}
+
+/* ------------------------------
+   button code start here
+------------------------------ */
+
+/* button skin */
+.btn-skin {
+  background-color: var(--primary-skin);
+  border: 1px solid var(--primary-skin);
+  border-radius: 360px;
+  color: var(--secondary-black-gray);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 18px 40px;
+  transition: all 0.3s ease;
+}
+.btn-skin:hover {
+  transition: all 0.3s ease;
+  background-color: var(--primary-dark-green);
+  border: 1px solid var(--primary-dark-green);
+  color: var(--white);
+}
+
+/* button white */
+.btn-white {
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 360px;
+  color: var(--secondary-black-gray);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 18px 40px;
+  transition: all 0.3s ease;
+}
+.btn-white:hover {
+  transition: all 0.3s ease;
+  background-color: var(--primary-skin);
+  border: 1px solid var(--primary-skin);
+}
+
+/* button darkgreen */
+.btn-darkGreen {
+  background-color: var(--primary-dark-green);
+  border: 1px solid var(--primary-dark-green);
+  border-radius: 360px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 18px 40px;
+  transition: all 0.3s ease;
+}
+.btn-darkGreen:hover {
+  transition: all 0.3s ease;
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  color: var(--secondary-black-gray);
+}
+/* ------------------------------
+   button code end here
+------------------------------ */
+
+/* ------------------------------
+   hamburger code start here
+------------------------------ */
+.hamburger {
+  height: 50px;
+  width: 50px;
+  transform: 0.2s;
+  position: relative;
+  display: none;
+}
+.hamburger .checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.line {
+  transition: 0.5s;
+  stroke-width: 4px;
+  stroke: var(--black);
+}
+.lineTop {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 25;
+}
+.lineBottom {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 60;
+}
+.lineMid {
+  stroke-dasharray: 40 40;
+}
+.hamburger .checkbox:checked + svg .line {
+  stroke: var(--primary-dark-green);
+}
+.hamburger .checkbox:checked + svg .lineTop {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(45deg) translate(-7px, -5px);
+}
+.hamburger .checkbox:checked + svg .lineMid {
+  stroke-dashoffset: 40;
+}
+.hamburger .checkbox:checked + svg .lineBottom {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(-45deg) translate(-5px, 5px);
+}
+/* ------------------------------
+   hamburger code end here
+------------------------------ */
