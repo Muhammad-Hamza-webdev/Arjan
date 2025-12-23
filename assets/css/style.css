@@ -150,21 +150,18 @@ li {
 
 /* button skin form */
 .btn-skin-form {
-  background-color: var(--primary-skin);
-  border: 1px solid var(--primary-skin);
-  border-radius: 360px;
-  color: var(--secondary-black-gray);
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
   padding: 14px 34px;
+}
+
+/* button skin hero */
+.btn-skin-hero {
   transition: all 0.3s ease;
 }
-.btn-skin-form:hover {
+.btn-skin-hero:hover {
   transition: all 0.3s ease;
-  background-color: var(--primary-dark-green);
-  border: 1px solid var(--primary-dark-green);
-  color: var(--white);
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  color: var(--secondary-black-gray);
 }
 
 /* button white */
