@@ -68,6 +68,7 @@
     border-radius: 20px;
     height: 95vh;
     width: 60%;
+    gap: 40px;
     justify-content: start;
     top: 0;
     padding: 120px 50px 50px 30px;
