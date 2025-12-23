@@ -21,3 +21,38 @@ home start
   display: flex;
   gap: 30px;
 }
+
+/* who we are */
+.who-we-are {
+  background-image: url("../img/who-we-are-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+.inner-who-we-are {
+  display: flex;
+  gap: 30px;
+}
+
+.img-section img{
+  width: 800px;
+}
+
+.whoweare {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+.fakeBtn-white {
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 360px;
+  color: var(--secondary-black-gray);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 28px;
+}
