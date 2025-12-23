@@ -17,6 +17,9 @@ header start
   padding: 0 16px;
   backdrop-filter: blur(12px);
 }
+.header-inner-box a {
+  z-index: 5;
+}
 .header-inner-box a img {
   width: 160px;
   height: auto;
@@ -41,7 +44,6 @@ header start
   color: var(--primary-dark-green);
   transition: all 0.3s ease;
 }
-
 
 /* ------------------------------
    hamburger code start here
