@@ -65,10 +65,7 @@ header start
 .line {
   transition: 0.5s;
   stroke-width: 4px;
-  stroke: var(--primary-skin);
-}
-.line:hover {
-  stroke: var(--primary-dark-green);
+  stroke: var(--black);
 }
 .lineTop {
   stroke-dasharray: 40 40;
