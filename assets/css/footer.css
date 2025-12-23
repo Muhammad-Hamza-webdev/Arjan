@@ -2,8 +2,6 @@
 footer start
 -------------------- */
 .footer-main {
-  background-image: linear-gradient(#193330ed, #193330ed),
-    url("../img/09e602c3f3f69e6823db78035a1eb0cc8c1160dd.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

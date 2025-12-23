@@ -210,20 +210,35 @@ li {
 /* ------------------------------
    generic code start here
 ------------------------------ */
+
+.text-h1 {
+  font-size: 150px;
+  font-weight: 700;
+}
+
 .text-h5 {
   font-size: 32px;
   font-weight: 600;
 }
+
+.text-para-hero {
+  font-size: 28px;
+  font-weight: 500;
+}
+
 .text-para {
   font-size: 16px;
   font-weight: 400;
 }
+
 .white {
   color: var(--white);
 }
+
 .gray {
   color: var(--text-gray);
 }
+
 .hover-skin:hover {
   transition: all 0.3s ease;
   color: var(--primary-skin);

@@ -4,7 +4,7 @@ header start
 .header-main {
   display: flex;
   justify-content: center;
-  margin: 20px 0 0 0;
+  margin: 20px 0 -116px 0;
   position: relative;
 }
 .header-inner-box {
@@ -41,7 +41,7 @@ header start
   transition: all 0.3s ease;
 }
 .navbar li a:hover {
-  color: var(--primary-dark-green);
+  color: var(--primary-skin);
   transition: all 0.3s ease;
 }
 
