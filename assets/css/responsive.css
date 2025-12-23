@@ -2,6 +2,10 @@
    1366px
 ------------------------------ */
 @media (max-width: 1366px) {
+  /* footer code*/
+  .footer-inner-box {
+    gap: 30px;
+  }
 }
 /* ------------------------------
    1200px
@@ -10,6 +14,36 @@
   /* header code */
   .navigation {
     gap: 60px;
+  }
+
+  /* footer code*/
+  .footer-inner-box {
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 40px;
+  }
+
+  .footer-inner-box .info:nth-child(4) {
+    width: 48%;
+    order: 2;
+  }
+  .footer-inner-box .info:nth-child(3) {
+    width: 48%;
+    order: 1;
+  }
+
+  .footer-inner-box .info:nth-child(2) {
+    width: 48%;
+    order: 4;
+  }
+
+  .email {
+    width: 48%;
+    order: 3;
+  }
+
+  .copyright {
+    padding: 20px 0 30px 0;
   }
 }
 /* ------------------------------
@@ -22,6 +56,23 @@
   }
   .navbar {
     gap: 25px;
+  }
+
+  /* footer code */
+  .footer-inner-box .info:nth-child(4) {
+    width: 47%;
+  }
+
+  .footer-inner-box .info:nth-child(3) {
+    width: 47%;
+  }
+
+  .footer-inner-box .info:nth-child(2) {
+    width: 47%;
+  }
+
+  .email {
+    width: 47%;
   }
 }
 /* ------------------------------
@@ -65,6 +116,24 @@
    786px
 ------------------------------ */
 @media (max-width: 786px) {
+  /* footer code */
+  .footer-inner-box .info:nth-child(4) {
+    width: 100%;
+    order: 1;
+  }
+
+  .footer-inner-box .info:nth-child(3) {
+    order: 3;
+  }
+
+  .footer-inner-box .info:nth-child(2) {
+    order: 2;
+  }
+
+  .email {
+    width: 100%;
+    order: 4;
+  }
 }
 /* ------------------------------
    550px
@@ -72,6 +141,37 @@
 @media (max-width: 550px) {
   /* header code */
   .navigation {
+    width: 100%;
+  }
+
+  /* footer code */
+  .footer-inner-box .info:nth-child(4) {
+    order: 1;
+    align-items: center;
+  }
+
+  .footer-inner-box .info:nth-child(3) {
+    width: 100%;
+    order: 2;
+  }
+
+  .footer-inner-box .info:nth-child(2) {
+    width: 100%;
+    order: 3;
+  }
+
+  .email {
+    order: 4;
+  }
+
+  .form {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+  .input-email {
+    width: 100%;
+  }
+  .btn-skin-form {
     width: 100%;
   }
 }

@@ -22,6 +22,68 @@ File: style.css
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Generic placeholder styling for ALL browsers and ALL input types */
+::-webkit-input-placeholder {
+  /* Chrome, Safari, Opera, Edge Chromium */
+  color: black;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge (old versions) */
+  color: black;
+}
+
+::placeholder {
+  /* Modern browsers */
+  color: black;
+  opacity: 1;
+}
+
+/* Apply to ALL input elements */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  color: black;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder,
+select::-ms-input-placeholder {
+  color: black;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: black;
+  opacity: 1;
+}
 /* ------------------------------
    Global elements
 ------------------------------ */
@@ -60,6 +122,7 @@ li {
   --white: #ffffff;
   --off-white: #fcf9f6;
   --black: #000000;
+  --text-gray: #838c90;
 }
 
 /* ------------------------------
@@ -79,6 +142,25 @@ li {
   transition: all 0.3s ease;
 }
 .btn-skin:hover {
+  transition: all 0.3s ease;
+  background-color: var(--primary-dark-green);
+  border: 1px solid var(--primary-dark-green);
+  color: var(--white);
+}
+
+/* button skin form */
+.btn-skin-form {
+  background-color: var(--primary-skin);
+  border: 1px solid var(--primary-skin);
+  border-radius: 360px;
+  color: var(--secondary-black-gray);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 14px 34px;
+  transition: all 0.3s ease;
+}
+.btn-skin-form:hover {
   transition: all 0.3s ease;
   background-color: var(--primary-dark-green);
   border: 1px solid var(--primary-dark-green);
@@ -124,3 +206,25 @@ li {
 /* ------------------------------
    button code end here
 ------------------------------ */
+
+/* ------------------------------
+   generic code start here
+------------------------------ */
+.text-h5 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.text-para {
+  font-size: 16px;
+  font-weight: 400;
+}
+.white {
+  color: var(--white);
+}
+.gray {
+  color: var(--text-gray);
+}
+.hover-skin:hover {
+  transition: all 0.3s ease;
+  color: var(--primary-skin);
+}
