@@ -15,6 +15,10 @@
   .text-h3 {
     font-size: 38px;
   }
+
+  .tab-single-card {
+    height: 395px;
+  }
   /* body code */
 
   /* footer code*/
@@ -55,6 +59,9 @@
     font-size: 32px;
   }
 
+  .tab-single-card {
+    height: 335px;
+  }
   /* body code */
 
   /* footer code*/
@@ -126,6 +133,9 @@
   .text-h1 {
     font-size: 140px;
   }
+  .text-h5 {
+    font-size: 26px;
+  }
 
   .cards {
     flex-wrap: wrap;
@@ -133,6 +143,10 @@
 
   .single-card {
     width: 48.9%;
+  }
+
+  .tab-single-card {
+    height: 290px;
   }
   /* body  code*/
 
@@ -179,6 +193,23 @@
 
   .our-goal {
     padding: 80px 0;
+  }
+
+  .our-project {
+    padding: 0 0 80px 0;
+  }
+  .tabpanel-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .all-tabs {
+    border-radius: 30px;
+  }
+
+  [role="tab"] {
+    width: 46%;
+    display: flex;
+    justify-content: center;
   }
   /* body code */
 
@@ -254,6 +285,19 @@
   }
   .single-card {
     width: 100%;
+  }
+  [role="tab"] {
+    width: 100%;
+  }
+  .tabpanels {
+    margin-top: 40px;
+  }
+  .tab-single-card {
+    height: 230px;
+  }
+  .tabpanel-content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
   }
   /* body  code*/
 
