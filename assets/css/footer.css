@@ -27,7 +27,6 @@ footer start
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: end;
   width: 34%;
 }
 
@@ -52,6 +51,7 @@ footer start
 .input-email {
   border: none;
   padding: 14px 0;
+  width: 100%;
 }
 
 /* email code end here */
@@ -60,7 +60,6 @@ footer start
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: end;
   width: 22%;
 }
 
@@ -68,7 +67,6 @@ footer start
   display: flex;
   flex-direction: column;
   gap: 6px;
-  align-items: end;
 }
 .icon-box div {
   display: flex;
@@ -88,7 +86,6 @@ footer start
 .navbar-footer {
   flex-direction: column-reverse;
   display: flex;
-  align-items: end;
   gap: 16px;
   transition: all 0.3s ease;
 }

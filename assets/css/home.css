@@ -37,15 +37,12 @@ home start
   gap: 30px;
 }
 
-.img-section img{
-  width: 800px;
-}
-
 .whoweare {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: end;
+  align-items: start;
+  width: 50%;
 }
 .fakeBtn-white {
   background-color: var(--white);
@@ -55,4 +52,12 @@ home start
   font-size: 18px;
   font-weight: 700;
   padding: 14px 28px;
+}
+
+.img-section {
+  width: 50%;
+}
+
+.img-section img {
+  width: 700px;
 }
