@@ -4,8 +4,16 @@
 @media (max-width: 1366px) {
   /* body code */
   /* home code */
+
   .text-h2 {
     font-size: 90px;
+  }
+  .who-we-are {
+    padding: 80px 0 130px 0;
+  }
+
+  .text-h3 {
+    font-size: 38px;
   }
   /* body code */
 
@@ -14,6 +22,7 @@
     gap: 30px;
   }
 }
+
 /* ------------------------------
    1200px
 ------------------------------ */
@@ -27,7 +36,6 @@
   }
 
   /* body code*/
-
   /* home */
 
   .img-section {
@@ -37,6 +45,14 @@
 
   .img-section img {
     width: 100%;
+  }
+
+  .who-we-are {
+    padding: 80px 0;
+  }
+
+  .text-h3 {
+    font-size: 32px;
   }
 
   /* body code */
@@ -67,6 +83,7 @@
     padding: 20px 0 30px 0;
   }
 }
+
 /* ------------------------------
    1024px
 ------------------------------ */
@@ -104,10 +121,20 @@
     align-items: start;
   }
 
-  /* body  home*/
+  /* body  code*/
+  /* home code */
   .text-h1 {
     font-size: 140px;
   }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .single-card {
+    width: 48.9%;
+  }
+  /* body  code*/
 
   /* footer code */
   .footer-inner-box .info:nth-child(4) {
@@ -126,18 +153,32 @@
     width: 47%;
   }
 }
+
 /* ------------------------------
    880px
 ------------------------------ */
 @media (max-width: 880px) {
   /* body code */
-  /* home */
+  /* home code*/
   .inner-who-we-are {
     flex-wrap: wrap;
   }
+
+  .who-we-are {
+    padding: 80px 0 40px 0;
+  }
+
   .whoweare,
   .img-section {
     width: 100%;
+  }
+
+  .single-card {
+    width: 48.7%;
+  }
+
+  .our-goal {
+    padding: 80px 0;
   }
   /* body code */
 
@@ -146,6 +187,7 @@
     padding: 60px 0 0 0;
   }
 }
+
 /* ------------------------------
    786px
 ------------------------------ */
@@ -160,6 +202,10 @@
 
   .text-h2 {
     font-size: 70px;
+  }
+
+  .single-card {
+    width: 48.5%;
   }
   /* body  code*/
 
@@ -181,6 +227,7 @@
     order: 4;
   }
 }
+
 /* ------------------------------
    550px
 ------------------------------ */
@@ -201,6 +248,12 @@
   }
   .text-h2 {
     font-size: 60px;
+  }
+  .who-we-are {
+    padding: 80px 0 0 0;
+  }
+  .single-card {
+    width: 100%;
   }
   /* body  code*/
 

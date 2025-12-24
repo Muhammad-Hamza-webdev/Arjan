@@ -124,11 +124,13 @@ li {
 :root {
   --primary-dark-green: #153330;
   --primary-skin: #d8b38f;
+  --primary-skin-light: #faf6f2;
   --secondary-black-gray: #1d1f20;
   --white: #ffffff;
   --off-white: #fcf9f6;
   --black: #000000;
   --text-gray: #838c90;
+  --fakeBtn-gray: #efefef;
 }
 
 /* ------------------------------
@@ -221,6 +223,11 @@ li {
 
 .text-h2 {
   font-size: 110px;
+  font-weight: 600;
+}
+
+.text-h3 {
+  font-size: 45px;
   font-weight: 600;
 }
 
