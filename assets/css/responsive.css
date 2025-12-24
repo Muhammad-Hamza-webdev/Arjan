@@ -305,4 +305,11 @@
   .footer-inner-box .info:nth-child(1) {
     align-items: center;
   }
+  .footer-inner-box .info:nth-child(3) {
+    width: 44%;
+  }
+  
+  .footer-inner-box .info:nth-child(2) {
+    width: 44%;
+  }
 }
