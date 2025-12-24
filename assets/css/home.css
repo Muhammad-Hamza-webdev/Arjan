@@ -232,3 +232,18 @@ home start
   flex-direction: column;
   gap: 20px;
 }
+
+[role="tabpanel"] {
+  animation: slideFromRight 0.35s ease-out;
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
