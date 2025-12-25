@@ -19,6 +19,23 @@
   .tab-single-card {
     height: 395px;
   }
+
+  .our-numbers {
+    background-size: 60%;
+  }
+
+  .number-info {
+    width: 44%;
+  }
+
+  .numbers-card {
+    width: 56%;
+  }
+
+  .para-pding {
+    padding: 0 12%;
+  }
+
   /* body code */
 
   /* footer code*/
@@ -61,6 +78,20 @@
 
   .tab-single-card {
     height: 335px;
+  }
+
+  .margin {
+    margin: 40px 0 50px 0;
+  }
+
+  .text-counter {
+    font-size: 52px;
+  }
+  .para-pding {
+    padding: 0 6%;
+  }
+  .googleMap {
+    height: 600px;
   }
   /* body code */
 
@@ -148,6 +179,22 @@
   .tab-single-card {
     height: 290px;
   }
+
+  .our-numbers {
+    background-size: 80%;
+    background-position: bottom center;
+  }
+  .inner-our-number {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .number-info,
+  .numbers-card {
+    width: 100%;
+  }
+  .para-pding {
+    padding: 0;
+  }
   /* body  code*/
 
   /* footer code */
@@ -210,6 +257,17 @@
     width: 46%;
     display: flex;
     justify-content: center;
+  }
+
+  .our-project {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  }
+
+  .margin {
+    margin: 40px 0 10px 0;
+  }
+  .googleMap {
+    height: 500px;
   }
   /* body code */
 
@@ -286,6 +344,10 @@
   .single-card {
     width: 100%;
   }
+  .cards .single-card:nth-child(even) {
+    margin: 0;
+  }
+
   [role="tab"] {
     width: 100%;
   }
@@ -299,6 +361,24 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, auto);
   }
+  .our-project {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
+  }
+
+  .margin {
+    margin: 40px 0 0px 0;
+  }
+  .our-numbers {
+    background-size: 0;
+  }
+  .numbers-card {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+  }
+
+  .googleMap {
+    height: 400px;
+  }
   /* body  code*/
 
   /* footer code */
@@ -308,7 +388,7 @@
   .footer-inner-box .info:nth-child(3) {
     width: 44%;
   }
-  
+
   .footer-inner-box .info:nth-child(2) {
     width: 44%;
   }

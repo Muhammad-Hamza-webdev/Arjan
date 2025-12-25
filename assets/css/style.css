@@ -213,8 +213,204 @@ li {
 ------------------------------ */
 
 /* ------------------------------
+   tabs code start here
+------------------------------ */
+
+.our-project {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0;
+  padding: 80px 0;
+  background: linear-gradient(
+    180deg,
+    var(--white) 1.85%,
+    var(--primary-skin-light) 97.46%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.inner-our-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.all-tabs {
+  background-color: #faf6f2;
+  border-radius: 360px;
+}
+
+[role="tablist"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 8px 10px;
+}
+
+[role="tab"] {
+  flex: 1 0 auto;
+  padding: 10px 35px;
+  border: 2px solid var(--white);
+  background: var(--white);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 22px;
+  color: #5a6164;
+  transition: background 0.15s ease-in-out;
+  display: flex;
+  gap: 10px;
+  border-radius: 360px;
+  align-items: center;
+}
+
+[role="tab"]:hover {
+  cursor: pointer;
+  border: 2px solid var(--primary-skin);
+  background: var(--primary-skin);
+  color: white;
+}
+
+[role="tab"]:hover svg g path,
+[role="tab"]:hover svg path {
+  fill: #ffffff;
+}
+
+[role="tab"][aria-selected="true"] {
+  background: var(--primary-skin);
+  border-color: var(--primary-skin);
+  color: white;
+  position: relative;
+}
+
+[role="tab"][aria-selected="true"] svg g path,
+[role="tab"][aria-selected="true"] svg path {
+  fill: #ffffff;
+}
+
+[role="tabpanel"] {
+  position: relative;
+  z-index: 2;
+}
+
+[role="tabpanel"]:not([tabindex]) {
+  display: none;
+}
+
+.tabpanels {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.tabpanel-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+}
+
+.tab-single-card {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 100%;
+  height: 465px;
+  padding: 20px;
+  display: flex;
+  align-items: end;
+}
+
+.tab-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+[role="tabpanel"] {
+  animation: slideFromRight 0.35s ease-out;
+}
+
+.margin {
+  margin: 60px 0 80px 0;
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ------------------------------
+   tabs code end here
+------------------------------ */
+
+/* map */
+.our-map {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+.inner-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.para-pding {
+  padding: 0 18%;
+}
+.googleMap {
+  width: 100%;
+  height: 700px;
+  border-radius: 20px;
+}
+
+/* ------------------------------
    generic code start here
 ------------------------------ */
+
+/* ------------------
+Hero section start
+-------------------- */
+.hero-section {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 0 80px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.inner-hero-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.cta {
+  display: flex;
+  gap: 30px;
+}
+
+/* ------------------
+Hero section end
+-------------------- */
 
 .text-h1 {
   font-size: 150px;
@@ -228,6 +424,11 @@ li {
 
 .text-h3 {
   font-size: 45px;
+  font-weight: 600;
+}
+
+.text-counter {
+  font-size: 62px;
   font-weight: 600;
 }
 
@@ -245,13 +446,26 @@ li {
   font-size: 16px;
   font-weight: 400;
 }
+
 .text-para-big {
   font-size: 22px;
   font-weight: 400;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .black {
   color: var(--black);
+}
+
+.skin {
+  color: var(--primary-skin);
+}
+
+.darkGreen {
+  color: var(--primary-dark-green);
 }
 
 .white {
@@ -265,4 +479,25 @@ li {
 .hover-skin:hover {
   transition: all 0.3s ease;
   color: var(--primary-skin);
+}
+
+/* fake buttons */
+
+.fakeBtn-white {
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 360px;
+  color: var(--secondary-black-gray);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 24px;
+}
+.fakeBtn-gray {
+  background-color: var(--fakeBtn-gray);
+  border: 1px solid var(--fakeBtn-gray);
+  border-radius: 360px;
+  color: var(--secondary-black-gray);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 24px;
 }

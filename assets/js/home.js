@@ -1,38 +1,39 @@
-function initTabs(container) {
-  const tablist = container.querySelector("[role='tablist']");
-  const tabs = Array.from(tablist.querySelectorAll("[role='tab']"));
+// Select all elements with the 'js-counter' class
+const counters = document.querySelectorAll(".js-counter");
 
-  function activateTab(tab) {
-    const tabpanelID = tab.getAttribute("aria-controls");
-    const tabpanel = document.getElementById(tabpanelID);
+// Config: Trigger when 60% of the element is visible
+const observerOptions = {
+  threshold: 0.6, // If the element is 60% visible
+};
 
-    tab.setAttribute("aria-selected", "true");
-    tab.removeAttribute("tabindex");
-    tabpanel.setAttribute("tabindex", "0");
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    // If the element is 60% visible
+    if (entry.isIntersecting) {
+      const counter = entry.target;
+      const target = +counter.getAttribute("data-target"); // Get target number
+      const duration = 3000; // Animation duration in milliseconds (2 seconds)
+      const increment = target / (duration / 16); // Calculate step (assuming ~60fps)
 
-    document
-      .querySelectorAll('[role="tab"], [role="tabpanel"]')
-      .forEach((el) => {
-        if (el !== tab && el !== tabpanel) {
-          if (el.matches('[role="tab"]')) {
-            el.setAttribute("aria-selected", "false");
-            el.setAttribute("tabindex", "-1");
-          } else {
-            el.removeAttribute("tabindex");
-          }
+      let current = 0;
+
+      const updateCounter = () => {
+        current += increment;
+        if (current < target) {
+          counter.innerText = Math.ceil(current);
+          requestAnimationFrame(updateCounter); // Smooth animation loop
+        } else {
+          counter.innerText = target; // Ensure it ends on exact number
         }
-      });
-  }
+      };
 
-  function handleClick(e) {
-    const { target } = e;
-    if (target.matches('[role="tab"]')) {
-      activateTab(target);
+      updateCounter();
+      observer.unobserve(counter); // Stop watching this element (run only once)
     }
-  }
+  });
+}, observerOptions);
 
-  tablist.addEventListener("click", handleClick);
-}
-
-const tabContainers = document.querySelectorAll(".tabs");
-tabContainers.forEach(initTabs);
+// Attach observer to all counters
+counters.forEach((counter) => {
+  observer.observe(counter);
+});
