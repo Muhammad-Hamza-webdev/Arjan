@@ -1,5 +1,5 @@
 /* ------------------
-Project start
+contact start
 -------------------- */
 .form {
   display: flex;
@@ -13,8 +13,6 @@ Project start
     var(--primary-skin-light) 97.46%
   );
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
-}
-.inner-form {
 }
 .cnt-form {
   box-shadow: 0px 5.05px 35.34px 0px #00000014;
