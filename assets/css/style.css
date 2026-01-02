@@ -481,6 +481,10 @@ Hero section end
   color: var(--primary-skin);
 }
 
+.pl-5 {
+  padding-left: 5%;
+}
+
 /* fake buttons */
 
 .fakeBtn-white {
